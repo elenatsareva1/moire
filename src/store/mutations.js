@@ -27,10 +27,11 @@ export default {
     state.userAccessKey = payload;
   },
   syncCartProducts(state) {
-    state.cartData = state.cartProductsData.map((item) => ({
+    /* state.cartData = state.cartProductsData.map((item) => ({
       productId: item.product.id,
       quantity: item.quantity
-    }));
+    })); */
+    state.cartData = state.cartProductsData
   },
   updateCart(state, payload) {
     state.cartProductsData = payload;
